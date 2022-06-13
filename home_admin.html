@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,
+    100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;
+    1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Open+Sans:wght@600&family=Montserrat:wght@600;800&family=Roboto&family=Ubuntu&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./Images/sitelogo.png" type="image/icon type">
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Admin Dashboard</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            max-width: 1640px;
+            width:90%;
+            margin:0 auto;
+            font-family: 'Archivo', sans-serif;
+            background-color: #000;
+            width:100%;
+            height:100%;
+            overflow: auto;
+        }
+        .fa-home::before{
+            z-index: 10;
+            top:16%;
+            right:22.5%;
+            position: absolute;
+            padding: 0.3em;
+            color:#ffbe00;
+            font-size: 1.4rem;
+        }
+        .fa-sign-out::before{
+            z-index: 10;
+            position: absolute;
+            top:16%;
+            right:20%;
+            padding: 0.3em;
+            color:#ffbe00;
+            font-size: 1.4rem;
+        }
+        .admin{
+            position: absolute;
+            left:43%;
+            top:23%;
+            color:#ffbe00;
+            font-size:1.2rem;
+            font-weight: 600;
+        }
+        .admin::before{
+            content: "";
+            position: absolute;
+            top:8px;
+            left:205px;
+            width:40px;
+            height:2px;
+            background-color: #ffbe00;
+            /* transform: translateX(-50%); */
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1440px;
+            width:85%;
+            padding:14em 6.8em 8.1em;
+            color:#fff;
+            position: relative;
+        }
+        .circle{
+            padding:1em;
+            text-align: center;
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+            background-color: #222222;;
+        }
+        a{
+            padding: 1em;
+            text-decoration: none;
+        }
+        .container a:hover{
+            padding: 0em;
+            border-radius: 50%;
+            border:5px solid #ffbe00;
+        }
+        .circle i{
+            margin-top: 1.2em;
+            color:#ffbe00;
+            font-size: 3rem;
+        }
+        .circle h3{
+            margin-top: 0.2em;
+            color:white;
+        }
+        img{
+            position: absolute;
+            left:14%;
+            top:10%;
+        }
+        @media (max-width:1340px){
+            body{
+                display:none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <a href="admin.php"><img style="z-index:5;" class="logo" src="./Images/logo.png" alt=""></a>
+    <a href="home_admin.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    <a href="admin.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+    <h3 class="admin">ADMIN DASHBOARD</h3>
+    <div class="container">
+        <a href="http://localhost:8080/Project_24th March/admin_users.php">
+            <div class="circle">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h3>Users</h3>
+            </div>
+        </a>
+        <a href="http://localhost:8080/Project_24th March/admin_inventory.php">
+            <div class="circle">
+                <i class="fab fa-stack-exchange" aria-hidden="true"></i>
+                <h3>Inventory</h3>
+            </div>
+        </a>
+        <a href="http://localhost:8080/Project_24th March/admin_order.php">
+            <div class="circle">
+                <i class="fas fa-pizza-slice" aria-hidden="true"></i>
+                <h3>Orders</h3>
+            </div>
+        </a>
+        <a href="http://localhost:8080/Project_24th March/admin_table.php">
+            <div class="circle">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h3>Table Booking</h3>
+            </div>
+        </a>
+        <a href="http://localhost:8080/Project_24th March/admin_feedback.php">
+            <div class="circle">
+                <i class="fas fa-scroll" aria-hidden="true"></i>
+                <h3>Feedback</h3>
+            </div>
+        </a>
+        
+    </div>
+</body>
+</html>
