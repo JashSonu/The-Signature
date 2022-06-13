@@ -1,0 +1,2 @@
+# The-Signature
+theSignature - a restaurant management system, where a user can check out menu, order food items and can check his cart, and the system dynamically generates bills of the order placed. The user can also do reservations and provide feedback to the admin. There is a separate dashboard for admin where the admin can see the users, inventory, reservations made, orders placed along with contact information &amp; feedback. This project is part of the course SE (Software Engineering).
